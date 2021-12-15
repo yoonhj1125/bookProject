@@ -42,5 +42,8 @@ lombok, Spring Security, jstl
 - 빌드 결과물 
 다운로드 URL : https://drive.google.com/drive/folders/1Ou2wr_HR3RwgoqB2vyVCrdfjXk2YIEQE?usp=sharin
 파일 : book-0.0.1-SNAPSHOT.jar
-실행(터미널 및 cmd) : java -jar book-0.0.1-SNAPSHOT.jar
+실행(터미널 및 cmd) : java -jar book-0.0.1-SNAPSHOT.jar 명령어 실행 
+
+http://localhost:8000
+
 
