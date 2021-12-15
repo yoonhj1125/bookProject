@@ -1,5 +1,6 @@
 # bookProject
 오픈 API 를 이용하여 “책 검색 서비스”를 구현
+- 포트 8000 (application.yml)에서 정의 
 
 기본요구사항
 2.1 회원가입/로그인
