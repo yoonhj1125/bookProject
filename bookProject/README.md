@@ -35,3 +35,12 @@ lombok, Spring Security, jstl
 	Getter, Setter, Construct, Builder 등을 어노테이션으로 쉽게 구현할수 있음
 	컴파일 시점에 AnnotationProcessor를 이용하여 실제 코드를 생성한다.
 	사용 개발 툴에서 별도의 플러그인을 설치해야함.
+
+	
+
+	
+- 빌드 결과물 
+다운로드 URL : https://drive.google.com/drive/folders/1Ou2wr_HR3RwgoqB2vyVCrdfjXk2YIEQE?usp=sharin
+파일 : book-0.0.1-SNAPSHOT.jar
+실행(터미널 및 cmd) : java -jar book-0.0.1-SNAPSHOT.jar
+
