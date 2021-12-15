@@ -11,10 +11,10 @@
 	</parent>
 	<groupId>com.jeong</groupId>
 	<artifactId>book</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version> 
 	<name>book</name>
 	<description>My First book Project</description>
-
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
