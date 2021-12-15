@@ -12,7 +12,10 @@ let index = {
 					password: $("#password").val(),
 					email: $("#email").val()
 			};
-			
+			if( $("#username").val() =='' || $("#password").val() == '' || $("#email").val() == ''){
+				alert('가입정보를 다시한번 확인해주세요' );
+			 	return false;
+			}
 			//console.log(data);
 			
 			// ajax호출시 default가 비동기 호출

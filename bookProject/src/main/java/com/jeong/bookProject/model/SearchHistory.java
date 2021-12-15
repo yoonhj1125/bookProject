@@ -36,12 +36,9 @@ public class SearchHistory {
 	@Column
 	private String category;
 	
-
 	@Column
 	private String target;
 	
-	@Column(columnDefinition = "integer default 0")
-	private Integer cnt;
 
 	@Column(nullable = false)
 	private Timestamp regdate;

@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
 	private PrincipalDetailService principalDetailService;
 	
-	@Bean // IoC가 되요!!
+	@Bean // IoC
 	public BCryptPasswordEncoder encodePWD() {
 		return new BCryptPasswordEncoder();
 	}
@@ -38,10 +38,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
+		http.headers().frameOptions().disable();	//스프링시큐리티와 H2를 동시에 사용하는 경우 
 		http
 			.csrf().disable()  // csrf 토큰 비활성화 (테스트시 걸어두는 게 좋음)
 			.authorizeRequests()
-				.antMatchers("/", "/auth/**", "/js/**", "/css/**", "/image/**", "/dummy/**") 
+				.antMatchers("/", "/auth/**", "/js/**", "/css/**", "/image/**", "/dummy/**","/h2-console/**")//H2접근을 위해 추 
 				.permitAll()
 				.anyRequest()
 				.authenticated()

@@ -46,13 +46,10 @@ public class bookApiController {
 			@RequestParam(name = "category", defaultValue = "") String category,
 			@RequestParam(name = "page", defaultValue = "1") int page) {
 
-		System.out.println(target);
 		User user = principal.getUser();
-		System.out.println(user+"USER");
 		Map<String, Object> result = bookService.searchBooks(searchWord, target, category, page);
 		searchHistoryService
-		.save(new SearchHistory(null, searchWord, target, category, 0, Timestamp.valueOf(LocalDateTime.now()), user));
-		System.out.println(result.toString());
+		.save(new SearchHistory(null, searchWord, target, category, Timestamp.valueOf(LocalDateTime.now()), user));
 		return result;
 	}
 }

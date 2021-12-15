@@ -37,7 +37,6 @@ public class historyController {
 			User user = principal.getUser();
 			Page<SearchHistory> searchHistoryPage = searchHistoryService.findByMember(user, pageable);
 			model.addAttribute("searchHistoryPage", searchHistoryPage);
-			System.out.println(searchHistoryPage);
 			return "book/bookHistory";
 		} catch (Exception e) {
 			return "/";
@@ -50,7 +49,6 @@ public class historyController {
 			@PageableDefault(size = 10, page = 0) Pageable pageable) {
 		try {
 			List<topDto> searchHistoryPage = searchHistoryService.selectKeywordTopList();
-			  System.out.println(searchHistoryPage+"//");
 			model.addAttribute("resultData", searchHistoryPage);
 			return "book/topBook";
 		} catch (Exception e) {

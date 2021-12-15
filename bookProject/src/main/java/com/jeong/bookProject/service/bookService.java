@@ -15,7 +15,6 @@ import com.jeong.bookProject.model.User;
 import com.jeong.bookProject.utils.MyUtils;
 @Service
 public class bookService {
-	//private static final String API_REST_API_KEY = "f6429f68a2147e590a61969029b312af";
 		private static final String API_REST_API_KEY = "65300290cbc0f393502528027e912c84";
 		private static final String API_BOOK_URL = "https://dapi.kakao.com/v3/search/book";
 
