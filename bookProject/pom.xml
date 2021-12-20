@@ -14,7 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version> 
 	<name>book</name>
 	<description>My First book Project</description>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -29,20 +29,11 @@
 		</dependency>
 
 
-		<!-- JSP 템플릿 엔진 -->
-		<!-- <dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jasper</artifactId>
-			<version>9.0.22</version>
-		</dependency> -->
-		
-		
-		<!-- JSP view setting -->
+	<!-- JSP view setting -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-		
 
 		<!-- JSTL -->
 		<dependency>
